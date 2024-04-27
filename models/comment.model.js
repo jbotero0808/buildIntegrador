@@ -26,6 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importStar(require("mongoose"));
 const commentSchema = new mongoose_1.Schema({
     idPost: { type: String, required: true },
-    comentario: { type: String, required: true }
+    comentario: { type: String, required: true },
+    idUser: { type: String, required: true }
 });
 exports.default = mongoose_1.default.model("Comment", commentSchema);

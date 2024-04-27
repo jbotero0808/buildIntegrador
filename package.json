@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node src/app.ts",
     "start": "shx rm -rf build && tsc && shx cp -r src/public build && shx cp -r package.json build && node build/app.js",
-    "build": "shx rm -rf build && tsc && shx cp -r src/public build && shx cp -r package.json build"
+    "build": "shx echo ''Eliminando la carpeta build'' && shx rm -rf build && tsc && shx echo ''Copiando la carpeta public a la carpeta build'' && shx cp -r src/public build && shx echo ''Copiando el archivo package.json a la carpeta package.json a build'' && shx cp -r package.json build"
   },
   "keywords": [],
   "author": "",

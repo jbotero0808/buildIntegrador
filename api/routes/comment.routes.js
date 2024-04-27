@@ -12,4 +12,6 @@ router.post("/", auth_controller_1.verifyJWT, comment_controller_1.createComment
 router.get("/:id", auth_controller_1.verifyJWT, comment_controller_1.getComment);
 router.put("/:id", auth_controller_1.verifyJWT, comment_controller_1.updateComment);
 router.delete("/:id", auth_controller_1.verifyJWT, comment_controller_1.deleteComment);
+router.get("/user/:id", auth_controller_1.verifyJWT, comment_controller_1.getUserComments);
+router.get("/post/:id", auth_controller_1.verifyJWT, comment_controller_1.getPostComments);
 exports.default = router;
